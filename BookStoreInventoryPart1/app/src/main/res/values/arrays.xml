@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <!-- These are the options displayed in the gender drop-down Spinner -->
+        <string-array name="array_supplier_options">
+            <item>Supplier 1</item>
+            <item>Supplier 2</item>
+            <item>Supplier 3</item>
+            <item>Supplier 4</item>
+            <item>Supplier 5</item>
+            <item>Unknown Supplier</item>
+        </string-array>
+
+</resources>

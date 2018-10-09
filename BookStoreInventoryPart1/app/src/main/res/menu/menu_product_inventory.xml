@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Options menu for the ProductInventoryActivity -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProductInventoryActivity">
+
+    // This XML layout has attributes that are used for menu items such as id, title and showAction
+    // The showAction specify if the item will be shown as an icon in the app bar or in the Overflow
+    // in this case, since showAction = "never", the item will be shown in the Overflow menu
+    // This connects with the onCreateOptionsMenu and onCreateItemSelected methods in the CatalogActivity
+    <item
+        android:id="@+id/action_insert_dummy_data"
+        android:title="Insert Fake Product"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_all_entries"
+        android:title="Delete All Products"
+        app:showAsAction="never" />
+    //This items connect with the ProductInventoryActivity by overriding methods in the ProductInventoryActivity class
+</menu>

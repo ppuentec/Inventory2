@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BookStoreInventory-Part1</string>
+    <string name="editor_activity_title_new_product">Add a product</string>
+    <string name="editor_activity_title_edit_product">Edit product</string>
+    <string name="editor_insert_product_failed">Error with Saving Product</string>
+    <string name="editor_insert_product_successful">Insert Product Successful</string>
+    <string name="editor_update_product_failed">Updates to product failed</string>
+    <string name="editor_update_product_successful">Updates to the product were successful</string>
+    <string name="unsaved_changes_dialog_msg">Changes were not saved</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="delete_dialog_msg">Delete</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_product_failed">Delete product failed</string>
+    <string name="editor_delete_product_successful">Delete Successful</string>
+    <string name="unknown_price">Unknown Price</string>
+    <string name="empty_view_title_text">Empty View</string>
+    <string name="empty_view_subtitle_text">N/A</string>
+</resources>

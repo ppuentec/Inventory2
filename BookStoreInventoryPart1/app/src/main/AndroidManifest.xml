@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.bookstoreinventory_part1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ProductInventoryActivity">
+            android:label="ProductInventory">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProductEditorActivity"
+            android:theme="@style/EditorTheme"
+            android:parentActivityName=".ProductInventoryActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductInventoryActivity" />
+        </activity>
+        <!-- Here is where the Content Provider is added as an app component to the app
+name: Here is where is added the name of the java class of the provider (tag)
+authorities: Here is where the Content Provider is uniquely identify on the device
+exported: Here is determine if the Content Provider is visible to other applications -->
+
+        <provider
+            android:name=".data.BookInventoryProvider"
+            android:authorities="com.example.android.bookstoreinventory_part1"
+            android:exported="false" />
+    </application>
+
+</manifest>
